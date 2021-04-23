@@ -4,6 +4,7 @@ body{
     padding: 0%;
 }
 
+li{list-style: none;}
 img{object-fit: cover;}
 
 /* Header */
@@ -15,10 +16,7 @@ header{
 
 #Reservia{padding: 40px 0 40px 0;}
 
-nav ul{
-    display: flex;
-    list-style: none;
-}
+nav ul{display: flex;}
 nav li{padding: 50px 30px 0 20px;}
 #sign{color: #0065FC;}
 
@@ -254,3 +252,14 @@ nav li{padding: 50px 30px 0 20px;}
     height: 110px;
     border-radius: 20px 20px 0 0;
 }
+
+/* Footer */
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 0 40px 0 40px;
+}
+
+.footer-list{padding: 40px 250px 40px 0;}
+footer ul{padding-left: 0%;}
+footer li{padding-bottom: 10px;}
