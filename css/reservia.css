@@ -74,3 +74,20 @@ nav li{padding: 50px 30px 0 20px;}
     border-radius: 50px;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info{color: #0065FC;}
+
+/* Info */
+#info{
+    display: flex;
+    align-items: center;
+}
+
+#info span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F2F2F2;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
