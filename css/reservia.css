@@ -1,0 +1,20 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+}
+
+#Reservia{padding: 40px 0 40px 0;}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{padding: 50px 30px 0 20px;}
+#sign{color: #0065FC;}
