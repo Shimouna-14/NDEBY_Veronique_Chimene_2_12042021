@@ -11,10 +11,10 @@ img{object-fit: cover;}
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 40px 0 40px;
+    padding: 0 50px 0 50px;
 }
 
-#Reservia{padding: 40px 0 40px 0;}
+#Reservia{padding: 50px 0 20px 0;}
 
 nav ul{
     display: flex;
@@ -24,7 +24,7 @@ nav li{padding: 50px 30px 0 20px;}
 #sign{color: #0065FC;}
 
 /* Central container */
-#container{padding: 0 40px 0 40px;}
+#container{padding: 0 50px 0 50px;}
 
 /* Research bar */
 #research{display: flex;}
@@ -260,7 +260,7 @@ nav li{padding: 50px 30px 0 20px;}
 footer{
     background-color: #F2F2F2;
     display: flex;
-    padding: 0 40px 0 40px;
+    padding: 0 50px 0 50px;
 }
 
 .footer-list{padding: 40px 250px 40px 0;}
@@ -292,3 +292,20 @@ nav li:hover{
 }
 
 .famous a{display: flex;}
+
+/* Responsive */
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    body{background-color: lightgreen;}
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{background-color: antiquewhite;}
+}
+
+/* Phone */
+@media screen and (max-width: 767px){
+    body{background-color: indianred;}
+}
