@@ -6,6 +6,7 @@ body{
 
 li{list-style: none;}
 img{object-fit: cover;}
+#container, header{padding: 0 50px 0 50px;}
 
 /* Header */
 header{
@@ -288,29 +289,23 @@ nav li:hover{
 .famous a{display: flex;}
 
 /* Responsive */
-@media screen and (min-width: 1205px){
-    #container, header{padding: 0 50px 0 50px;}
-}
+@media screen and (max-width: 1199px){
 
-
-@media screen and (max-width: 1205px){
-    /* body{background-color: rgb(39, 201, 39);} */
-
-    #category{padding-left: 3.5%;}
-
-    #populaire{
-        width: 95%;
-        border-radius: 0;
-    }
-
-    .famous{height: 160px;}
+    #container, header{padding: 0;}
 
     #two-blocs{
         flex-direction: column-reverse;
         height: 1300px;
     }
 
+    #populaire{
+        width: 95%;
+        border-radius: 0;
+    }
+
+    .famous{
+        width: 100%;
+        height: 160px;
+    }
     .img-famous{width: 55%;}
 }
-
-
