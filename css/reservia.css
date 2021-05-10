@@ -308,4 +308,10 @@ nav li:hover{
         height: 160px;
     }
     .img-famous{width: 55%;}
+
+    #hebergement{
+        width: 95%;
+        background-color: #ffffff;
+        border-radius: 0;
+    }
 }
