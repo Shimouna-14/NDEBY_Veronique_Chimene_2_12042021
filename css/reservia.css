@@ -262,9 +262,9 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     padding: 0 50px 0 50px;
+    justify-content: space-between;
 }
 
-.footer-list{padding: 40px 250px 40px 0;}
 footer ul{padding-left: 0%;}
 footer li{padding-bottom: 10px;}
 
@@ -378,4 +378,6 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         width: 190px;
         min-width: 190px;
     }
+
+    footer{flex-direction: column;}
 }
