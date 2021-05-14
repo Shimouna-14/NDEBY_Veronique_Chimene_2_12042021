@@ -41,6 +41,8 @@ nav p{margin: 0;}
     width: 230px;
     border: 1px solid #F2F2F2;
     padding-left: 10px;
+    margin-right: -10px;
+    
 }
 
 #button{
@@ -64,7 +66,7 @@ nav p{margin: 0;}
     align-items: center;
     border: 3px solid #F2F2F2;
     border-left: none;
-    border-radius: 25px;
+    border-radius: 50px;
     height: 50px;
     margin-left: 20px;
 }
@@ -78,6 +80,7 @@ nav p{margin: 0;}
     width: 50px;
     height: 50px;
     border-radius: 25px;
+    margin-left: -1px;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info{color: #0065FC;}
 
@@ -175,7 +178,7 @@ nav p{margin: 0;}
 .famous{
     background-color: white;
     display: flex;
-    width: 96%;
+    width: 100%;
     height: 131px;
     margin-bottom: 30px;
     border-radius: 25px;
@@ -193,7 +196,7 @@ nav p{margin: 0;}
     border-radius: 20px 0 0 20px;
 }
 
-.r-text{padding: 15px;}
+.r-text{padding: 15px 20px 15px 15px;}
 .r-text h4{margin: 0 0 10px 0;}
 .r-text p{margin: 0 0 16px 0;}
 
@@ -332,6 +335,12 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         color: white;
         border-radius: 10px;
         border: 0;
+
+    }
+    #mini-button:hover{
+        background-color: #DEEBFF;
+        color: #0065FC;
+        cursor: pointer;
     }
 
     #filter .bloc{margin: 15px 20px 0 0;}
@@ -343,7 +352,10 @@ nav li:hover{border-top: 2px solid #0065FC ;}
    
     main{padding: 0;}
 
-    #two-blocs{flex-direction: column-reverse;}
+    #two-blocs{
+        flex-direction: column-reverse;
+        margin-bottom: 14px;
+    }
 
     #populaire{
         width: 92%;
@@ -374,10 +386,7 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         width: 48%;
         margin-bottom: 15px;
     }
-
-    .moyen, .petit{
-        height: 210px;
-    }
+    .moyen, .petit{height: 210px;}
     .img-moyen, .img-petit{height: 155px;}
 }
 
@@ -388,9 +397,16 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         min-width: 190px;
     }
 
+    .logement{width: 48%;}
+
     footer{flex-direction: column;}
 }
 
 @media screen and (max-width: 575px){
     .logement{width: 95%;}
+
+    .grand, .two-blocs-activite{width: 100%;}
+    .grand{height: 210px;}
+    .img-grand{height: 155px;}
+    .moyen, .petit{margin-bottom: 15px;}
 }
