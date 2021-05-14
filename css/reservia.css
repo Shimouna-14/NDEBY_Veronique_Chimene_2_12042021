@@ -6,7 +6,7 @@ body{
 
 li{list-style: none;}
 img{object-fit: cover;}
-#container, header{padding: 0 50px 0 50px;}
+main, header{padding: 0 50px 0 50px;}
 
 /* Header */
 header{
@@ -103,7 +103,6 @@ nav p{margin: 0;}
     display: flex;
     justify-content: space-between;
     margin: 20px 0 60px 0;
-    height: 625px;
 }
 
 /* Hosting */
@@ -156,7 +155,6 @@ nav p{margin: 0;}
 #populaire{
     background-color: #F2F2F2;
     width: 28%;
-    height: 100%;
     padding:0 30px 0 30px;
     border-radius: 25px;
 }
@@ -209,7 +207,6 @@ nav p{margin: 0;}
 #space-activite{
     display: flex;
     justify-content: space-between;
-    height: 445px;
     margin-bottom: 60px;
 }
 
@@ -217,6 +214,7 @@ nav p{margin: 0;}
     width: 23%;
     border-radius: 25px;
     box-shadow: 2px 2px 10px #dddddd;
+    height: 445px;
 }
 .img-grand{
     width: 100%;
@@ -294,6 +292,7 @@ nav li:hover{border-top: 2px solid #0065FC ;}
 
 /* Responsive */
 @media screen and (max-width: 1199px){
+
     /* Header */
     header{
         flex-wrap: wrap;
@@ -342,13 +341,9 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         margin: 0;
     }
    
+    main{padding: 0;}
 
-    #container{padding: 0;}
-
-    #two-blocs{
-        flex-direction: column-reverse;
-        height: 1300px;
-    }
+    #two-blocs{flex-direction: column-reverse;}
 
     #populaire{
         width: 92%;
@@ -370,6 +365,20 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         background-color: #ffffff;
         border-radius: 0;
     }
+
+    #activite{padding: 0 25px 0 25px;}
+
+    #space-activite{flex-wrap: wrap;}
+
+    .grand, .two-blocs-activite{
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .moyen, .petit{
+        height: 210px;
+    }
+    .img-moyen, .img-petit{height: 155px;}
 }
 
 @media screen and (max-width: 767px){
@@ -380,4 +389,8 @@ nav li:hover{border-top: 2px solid #0065FC ;}
     }
 
     footer{flex-direction: column;}
+}
+
+@media screen and (max-width: 575px){
+    .logement{width: 95%;}
 }
