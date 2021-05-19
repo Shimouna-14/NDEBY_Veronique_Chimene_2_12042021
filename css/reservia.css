@@ -1,12 +1,12 @@
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 li{list-style: none;}
 img{object-fit: cover;}
-main, header{padding: 0 50px 0 50px;}
+main, header{padding: 0 50px;}
 
 /* Header */
 header{
@@ -19,7 +19,7 @@ header{
 nav{display: flex;}
 nav ul{
     display: flex;
-    margin: 0%;
+    margin: 0;
 }
 nav li, nav p{padding: 50px 30px 0 20px;}
 nav p a{color: #0065FC;}
@@ -118,7 +118,7 @@ nav p{
 #hosting{
     background-color: #F2F2F2;
     width: 61%;
-    padding: 0 25px 0 25px;
+    padding: 0 25px;
     border-radius: 25px;
 }
 #hosting h2{margin-top: 50px;}
@@ -164,13 +164,13 @@ nav p{
 .blue{color: #0065FC;}
 .gray{color: #F2F2F2;}
 
-#show{margin-top: 0%;}
+#show{margin-top: 0;}
 
 /* Popular */
 #popular{
     background-color: #F2F2F2;
     width: 28%;
-    padding:0 30px 0 30px;
+    padding: 0 30px 0 30px;
     border-radius: 25px;
 }
 
@@ -185,12 +185,12 @@ nav p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .famous{
     background-color: white;
     display: flex;
-    width: 100%;
     height: 145px;
     margin-bottom: 30px;
     border-radius: 25px;
@@ -214,7 +214,7 @@ nav p{
 }
 
 .r-text h4{margin: 2px 10px 10px 0;}
-.r-text p{margin: 0 0 30px 0;}
+.r-text p{margin-bottom: 30px;}
 .r-star{font-size: 1.2em;}
 
 /* Activities */
@@ -278,11 +278,11 @@ nav p{
 footer{
     background-color: #F2F2F2;
     display: flex;
-    padding: 0 50px 0 50px;
+    padding: 0 50px;
     justify-content: space-between;
 }
 
-footer ul{padding-left: 0%;}
+footer ul{padding-left: 0;}
 footer li{padding-bottom: 10px;}
 
 /* Link and Hover */
@@ -319,10 +319,10 @@ nav li:hover{border-top: 2px solid #0065FC;}
         padding: 0;
     }
 
-    #Reservia{padding: 40px 0 0 40px;}
+    #Reservia{padding: 40px 0 0 20px;}
 
     nav, nav ul{width: 100%;}
-    nav ul{padding: 0 0 15px 0;}
+    nav ul{padding: 0;}
 
     nav li{
         width: 50%;
@@ -360,7 +360,6 @@ nav li:hover{border-top: 2px solid #0065FC;}
     }
     .fa-search{font-size: 1.1em;}
        
-
     #filter .bloc{margin: 15px 20px 0 0;}
     #filter{flex-wrap: wrap;}
     #filter h3{
@@ -376,18 +375,20 @@ nav li:hover{border-top: 2px solid #0065FC;}
     }
 
     #popular{
-        width: 92%;
-        padding: 0 4%;
+        width: 100%;
+        padding: 0;
         border-radius: 0;
     }
 
+    #pop-title{margin: 30px 20px 0 20px;}
+
     .famous{
-        width: 100%;
         height: 145px;
+        margin: 0 20px 30px 20px;
     }
     .img-famous{
-        width: 350px;
-        min-width: 350px;
+        width: 330px;
+        min-width: 330px;
     }
 
     .r-text{
@@ -397,12 +398,14 @@ nav li:hover{border-top: 2px solid #0065FC;}
     }
 
     #hosting{
-        width: 95%;
+        width: 100%;
         background-color: #ffffff;
         border-radius: 0;
+        padding: 0;
     }
+    #hosting h2, #show{margin-left: 20px;}
 
-    #activities{padding: 0 25px 0 25px;}
+    #space-housing, #activities{padding: 0 20px;}
 
     #space-activities{flex-wrap: wrap;}
 
@@ -415,19 +418,17 @@ nav li:hover{border-top: 2px solid #0065FC;}
 }
 
 @media screen and (max-width: 767px){
-
-    .img-famous{
-        width: 130px;
-        min-width: 130px;
-    }
-
     .housing{width: 48%;}
 
     footer{flex-direction: column;}
 }
 
 @media screen and (max-width: 575px){
-    .housing{width: 95%;}
+    .img-famous{
+        width: 130px;
+        min-width: 130px;
+    }
+    .housing{width: 100%;}
 
     .large, .two-blocs-activities{width: 100%;}
     .large{height: 210px;}
