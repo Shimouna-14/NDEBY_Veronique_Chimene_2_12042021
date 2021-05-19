@@ -159,7 +159,7 @@ nav p{
 
 .space-star{
     margin-left: 15px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .blue{color: #0065FC;}
 .gray{color: #F2F2F2;}
@@ -208,16 +208,14 @@ nav p{
     border-radius: 20px 0 0 20px;
 }
 
-.r-text{padding: 15px 20px 15px 15px;}
-.r-text h4{
-    margin: 2px 10px 10px 0;
+.r-text{
+    padding: 15px 20px 15px 15px;
     font-size: 0.9em;
 }
-.r-text p{
-    margin: 0 0 30px 0;
-    font-size: 0.9em;
-}
-.r-star{font-size: 1.1em;}
+
+.r-text h4{margin: 2px 10px 10px 0;}
+.r-text p{margin: 0 0 30px 0;}
+.r-star{font-size: 1.2em;}
 
 /* Activities */
 #activities{
@@ -295,7 +293,7 @@ a{
 
 a:hover{color: #0065FC;}
 
-nav li:hover{border-top: 2px solid #0065FC ;}
+nav li:hover{border-top: 2px solid #0065FC;}
 
 #button:hover{
     background-color: #DEEBFF;
@@ -392,8 +390,11 @@ nav li:hover{border-top: 2px solid #0065FC ;}
         min-width: 350px;
     }
 
-    .r-text h4{margin: 0 5px 20px 0;}
-    .r-text p{margin: 0 0 40px 0;}
+    .r-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     #hosting{
         width: 95%;
@@ -416,8 +417,8 @@ nav li:hover{border-top: 2px solid #0065FC ;}
 @media screen and (max-width: 767px){
 
     .img-famous{
-        width: 190px;
-        min-width: 190px;
+        width: 130px;
+        min-width: 130px;
     }
 
     .housing{width: 48%;}
