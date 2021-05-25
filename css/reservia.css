@@ -42,9 +42,10 @@ nav p{
 
 #search{
     width: 230px;
+    height: 50px;
     border: 1px solid #F2F2F2;
     padding-left: 10px;
-    margin-right: -10px;
+    margin: 0 -10px 0 -4px;
     font-size: 1em;
 }
 
@@ -164,7 +165,10 @@ nav p{
 .blue{color: #0065FC;}
 .gray{color: #F2F2F2;}
 
-#show{margin-top: 0;}
+#show{
+    margin-top: 0;
+    font-weight: bold;
+}
 
 /* Popular */
 #popular{
@@ -293,7 +297,10 @@ a{
 
 a:hover{color: #0065FC;}
 
-nav li:hover{border-top: 2px solid #0065FC;}
+nav li:hover{
+    border-top: 2px solid #0065FC;
+    padding-top: 48px;
+}
 
 #button:hover{
     background-color: #DEEBFF;
@@ -333,6 +340,7 @@ nav li:hover{border-top: 2px solid #0065FC;}
     nav li:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
+        padding-top: 20px;
     }
 
     #sign{
@@ -424,14 +432,21 @@ nav li:hover{border-top: 2px solid #0065FC;}
 }
 
 @media screen and (max-width: 575px){
+    #search{width: 185px;}
+
     .img-famous{
-        width: 130px;
-        min-width: 130px;
+        width: 115px;
+        min-width: 115px;
     }
+    .r-text{padding: 15px 10px;}
+    .r-text p{margin: 0;}
+    .r-text h4{margin: 0;}
+
     .housing{width: 100%;}
 
     .large, .two-blocs-activities{width: 100%;}
     .large{height: 210px;}
     .img-large{height: 155px;}
+    .two-blocs-activities{margin-bottom: 0;}
     .medium, .little{margin-bottom: 15px;}
 }
